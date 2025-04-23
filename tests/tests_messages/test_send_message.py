@@ -3,7 +3,7 @@ import requests
 import uuid
 
 
-@pytest.mark.message1
+@pytest.mark.message
 def test_send_message(base_url, auth_headers):
     """
     Тест на отправку сообщения в канал
@@ -13,7 +13,7 @@ def test_send_message(base_url, auth_headers):
     3. Отправляем сообщение в канал
     Ожидаемый результат: статус 201, сообщение успешно создано
     """
-    
+
     # получаем команду
     teams_url = f"{base_url}/api/v4/teams"
     teams_response = requests.get(teams_url, headers=auth_headers)
