@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Venv
+venv/
+env/
+.venv/
+.env/
+
+# Logs
+*.log
+
+# Allure
+allure-result/
+allure-report/
+
+# Environment config
+.env
+*.env
+*.env.*
