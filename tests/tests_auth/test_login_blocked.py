@@ -53,5 +53,5 @@ def test_login_blocked(base_url, auth_headers):
     login_response = requests.post(login_url, json=login_credentials_blocked_1)
 
     assert login_response.status_code == 401, f"Status-code: {login_response.status_code}"
-    print(f"Message: {login_response.json().get("message")}")
+    print(f"Message: {login_response.json().get('message')}")
 

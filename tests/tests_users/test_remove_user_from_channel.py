@@ -17,7 +17,7 @@ def create_test_user(base_url, auth_headers):
     assert response.status_code == 201, f"Status-code POST: {response.status_code}"
 
     user_info = response.json()
-    print(f"\nThe user {user_info.get("username")} has been successfully created")
+    print(f"\nThe user {user_info.get('username')} has been successfully created")
     return user_info.get("id"), user_info.get("username")
 
 @pytest.mark.user

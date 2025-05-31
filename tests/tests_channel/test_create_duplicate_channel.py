@@ -53,4 +53,4 @@ def test_create_duplicate_channel(base_url, auth_headers):
 
     assert response.status_code == 400, f"Status-code: {response.status_code}"
     
-    print(f"Message: {response.json().get("message")}")
+    print(f"Message: {response.json().get('message')}")

@@ -20,3 +20,5 @@ allure-report/
 .env
 *.env
 *.env.*
+
+mattermost-venv/
